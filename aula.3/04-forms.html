@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <form>
+            <div>
+                <label for="txtNome">Nome: </label>
+                <input type="text" placeholder="Digite seu nome" id="txtNome" name="txtNome">
+            </div>
+
+            <div>
+                <label for="">E-mail: </label>
+                <input type="email" id="txtEmail" name="txtEmail" required>
+            </div>
+
+            <div>
+                <label for="txtSenha"> Senha:</label>
+                <input type="password" id="txtSenha" name="txtSenha">
+            </div>
+
+            <div>
+                <label for="dataNascimento">Data de nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento">
+            </div>
+
+            <div>
+                <label for="selectEstado">Selecione seu Estado:</label>
+                <select type="" name="selectEstado" id="selectEstado">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                </select>
+            
+            </div>
+
+            <div>
+                <p> Escolha a sua linguagem favorita</p>
+
+                <input type="radio" name="favlinguagens" id="csharp" value="csharp">
+                <label for="csharp">C#</label>
+
+                <input type="radio" name="favlinguagens" id="python" value="python">
+                <label for="python">Python</label>
+
+                <input type="radio" name="favlinguagens" id="java" value="java">
+                <label for="java">Java</label>
+            </div>
+
+
+            <input type="submit" value="Finalizar">
+
+        </form>
+    </main>
+    
+</body>
+
+</html>
