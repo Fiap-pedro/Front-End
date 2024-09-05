@@ -1,0 +1,49 @@
+body {
+    background-color: gray;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    max-width: 800px;
+    min-width: 280px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+h1, p {
+    color: green;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+    h1, p {
+        color: blue;
+    }
+
+    .paragrafo {
+        display: none;
+    }
+}
+
+img:hover {
+    filter: brightness(85%);
+    transition: 0.3s;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+    h1, p {
+        color: purple;
+    }
+}
+
