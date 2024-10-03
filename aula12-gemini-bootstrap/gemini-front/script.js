@@ -37,7 +37,7 @@ form.addEventListener("submit", (event) => {
     chatLog.appendChild(messageElement);
 
     // REQUISIÇÃO PARA SUA API LOCAL!!!
-    fetch("http://localhost:3000/sendMessage/", {
+    fetch("http://localhost:3001/sendMessage/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -46,4 +46,17 @@ form.addEventListener("submit", (event) => {
             messages
         })
     })
+
+        .then(res => res.json())
+        .then((data) => {
+            console.log(data);
+
+            const messageElement = document.createElement("div")
+            messageElement.classList.add("message")
+            messageElement.classList.add("message--assistant")
+            messageElement.innerHTML = `
+                <div class="message__text">${data.chat_completion} </div>
+            `;
+            chatLog.appendChild(messageElement);
+        })
 });
