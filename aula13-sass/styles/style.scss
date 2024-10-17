@@ -1,0 +1,22 @@
+@use 'mixins';
+@use 'variables';
+
+* {
+    @include mixins.default-config();
+}
+
+.container{
+    @include mixins.div-size(80%, 100vh);
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    background-color: variables.$primary-color;
+    margin: 0 auto;
+
+    .box {
+        @include mixins.div-size(300px, 200px);
+        background-color: purple;
+        border-radius: 4px;
+    }
+}
